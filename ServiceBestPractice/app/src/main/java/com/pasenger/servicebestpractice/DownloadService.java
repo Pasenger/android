@@ -110,6 +110,7 @@ public class DownloadService extends Service {
         public void pauseDownload(){
             if(downloadTask != null){
                 downloadTask.pauseDownload();
+                startForeground(1, getNofification("Downloading Paused", downloadTask.getLastProgress()));
             }
         }
 

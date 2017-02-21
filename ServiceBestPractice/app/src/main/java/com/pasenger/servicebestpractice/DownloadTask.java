@@ -186,4 +186,36 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
 
         return 0;
     }
+
+    public DownloadListener getListener() {
+        return listener;
+    }
+
+    public void setListener(DownloadListener listener) {
+        this.listener = listener;
+    }
+
+    public boolean isCanceled() {
+        return isCanceled;
+    }
+
+    public void setCanceled(boolean canceled) {
+        isCanceled = canceled;
+    }
+
+    public boolean isPaused() {
+        return isPaused;
+    }
+
+    public void setPaused(boolean paused) {
+        isPaused = paused;
+    }
+
+    public int getLastProgress() {
+        return lastProgress;
+    }
+
+    public void setLastProgress(int lastProgress) {
+        this.lastProgress = lastProgress;
+    }
 }
